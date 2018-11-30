@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper  cyan darken-1">
+                <a href="" class="brand-logo"><img id="id-logo" class="respondive-img container" src="img/logo.png"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html"><i class="material-icons left ">home</i>Home</a></li>
+                    <li><a href="sobre-nos.html"><i class="material-icons left">pets</i>Sobre nós</a></li>
+                    <li><a href="galeria.html"><i class="material-icons left">camera_alt</i>Galeria</a></li>
+                    <li><a href="contatos.html"><i class="material-icons left">mail</i>Contatos</a></li>
+                    <li><a href="jogo.html"><i class="material-icons left">mood</i>Jogo</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre-nos.html">Sobre nós</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li><a href="jogo.html">Jogo</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="card-main" class="row">
+            <div class="card blue-grey darken-1">
+                <div class="row">
+                    <p id=p-contato1>Contato</p>
+                    <form id="id-forms-contatos" class="col s12" onsubmit="return adicionaPessoa()">
+                        <img id="img-contatos" class="respondive-img container" src=" img/contatosimg.jpg ">
+                        <p>
+                            Tem alguma sugestão para melhorar nossa plataforma? <br>Uma ideia para ajudar o time?<br>Uma duvida sobre o esporte ou nossa equipe? <br> Ou quer fazer um patrocinio? <br> NOS MANDE UMA MENSAGEM!
+                        </p>
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" name="nome" class="validate">
+                            <label for="first_name">Primeiro Nome</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Sobrenome</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="phone" type="text" class="validate">
+                            <label>Tefelone</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                            <div class="row">
+                                
+                                    <div class="row">
+                                        <div class="input-field col s12 m6 l6">
+                                            <i class="material-icons prefix">mode_edit</i>
+                                            <textarea id="mensagem" class="materialize-textarea"></textarea>
+                                            <label for="icon_prefix2">Mensagem</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12 m6 l6">
+                                            <label><input type="checkbox" class="check" />
+                                                <span>Deseja receber informações por Email?</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row container">
+                                        <div class="input-field col s12 m6 l6">
+                                            <button class=" container btn waves-effect waves-light black" type="submit">Enviar<i class="material-icons right">send</i>
+								            </button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer class="page-footer cyan darken-1 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col l6 s12 ">
+                        <h5 class="white-text ">Acesse nossas redes sociais:</h5>
+                        <div class="col l4 offset-l2 s12 ">
+                            <ul>
+                                <li><a href="https://www.facebook.com/cheerleadersshewolves/ " class="fa fa-facebook "></a>Facebook
+                                </li>
+                                <li><a href="https://www.instagram.com/shewolvescheerleaders/ " class="fa fa-instagram "></a>Instagram</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l6 s12 ">
+                        <h5 class="white-text ">Veja também sobre a DarkWolves: </h5>
+                        <div class="col l4 offset-l2 s12 ">
+                            <ul>
+                                <li><a href="https://www.facebook.com/guarapuavadarkwolves/ " class="fa fa-facebook "></a>Facebook
+                                </li>
+                                <li><a href="https://www.instagram.com/guarapuavadarkwolves/ " class="fa fa-instagram "></a>Instagram</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright ">
+                <div class="container ">
+                    © 2018 Copyright Text
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+<script src="JQuery/jquery-3.3.1.min.js "></script>
+<script src="js/materialize.min.js "></script>
+<script src="js/cadastros.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.slider').slider();
+    });
+
+</script>
+
+</html>
